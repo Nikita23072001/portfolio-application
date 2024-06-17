@@ -16,3 +16,11 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+class AboutMe(models.Model):
+  name = models.CharField(max_length=50)
+  bio = models.TextField()
+  picture = models.ImageField(upload_to='profile_pics/', blank=True)  # Optional image
+
+  def __str__(self):
+    return self.name

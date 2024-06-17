@@ -1,0 +1,6 @@
+<h1>{{ about_me.name }}</h1>
+<p>{{ about_me.bio }}</p>
+
+{% if about_me.picture %}
+    <img src="{{ about_me.picture.url }}" alt="Profile Picture" />
+{% endif %}
